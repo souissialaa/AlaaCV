@@ -1,0 +1,164 @@
+section {
+    background: url(assets/bg-01.png) 100%;
+    background-size: cover;
+
+    /* Animation to do */
+    animation: move 2s infinite ease-in-out;
+    animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 600px) {
+    section {
+      background:none;
+    }
+    .main_description{
+        font-size: 20px;
+    }
+    body{
+        background-color: rgb(199, 199, 199);
+    }
+  
+  }
+@keyframes move {
+    0% {
+        background-position: 0 0%;
+    }
+
+    50% {
+        background-position: 0 20%;
+    }
+
+    100% {
+        background-position: 0 0%;
+    }
+}
+
+.home_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+}
+
+.main_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main_img img {
+    width: 155px;
+}
+
+.main_title {
+    margin-top: 1rem;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.main_description {
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.main_job {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: .75em;
+    letter-spacing: .5em;
+}
+
+
+.main_buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.btn {
+    margin-top: .5rem;
+    font-size: 1em;
+}
+
+.btn-stroke {
+    border: 1px solid black;
+}
+
+.btn-stroke:hover {
+    background-color: #343A40;
+    color: white;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    color: black;
+}
+
+.icon1:hover {
+    color: rgb(255, 60, 0);
+}
+
+.icon2:hover {
+    color: rgb(255, 60, 0);
+}
+
+.icon3:hover {
+    color: rgb(255, 60, 0);
+}
+
+.icon4:hover {
+    color: rgb(255, 60, 0);
+}
+
+.main_icons {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.main_title {
+    animation-delay: .75s;
+    animation-duration: 1.5s;
+}
+
+.main_job {
+    animation-duration: 2s;
+    animation-delay: 2.25s;
+}
+
+.btn {
+    animation-duration: 2s;
+}
+
+.main_description {
+    animation: type 2s steps(26);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 24ch;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 24ch;
+        border-right: 4px solid black;
+    }
+}
